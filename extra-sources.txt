@@ -1,0 +1,9 @@
+# Extra corpus sources — one file per line.
+# Paths are relative to RAG_EXTRA_BASE (default: this folder) or absolute.
+# Lines starting with # are comments. The listed relative path becomes
+# the source label in query results, so labels stay unique even when
+# different folders contain files with the same name.
+#
+# Examples:
+# ../my-notes/decisions.md
+# /home/me/team-wiki/onboarding.md

@@ -1,0 +1,6 @@
+# DataHub RAG — Python dependencies (Python 3.11+)
+# On a GPU-less machine, install the CPU build of torch first to avoid
+# pulling several GB of CUDA wheels:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+sentence-transformers>=3.0
+numpy>=1.26

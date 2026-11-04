@@ -1,0 +1,7 @@
+# Your index is built from YOUR corpus — it contains your data.
+# Never commit or publish it.
+index.db
+watermark.json
+.venv/
+__pycache__/
+*.pyc

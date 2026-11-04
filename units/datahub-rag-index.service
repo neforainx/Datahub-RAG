@@ -1,0 +1,12 @@
+[Unit]
+Description=DataHub RAG — refresh the local index (incremental, changed files only)
+After=network.target
+
+[Service]
+Type=oneshot
+# Adjust these three paths to your install.
+WorkingDirectory=/path/to/datahub-rag
+Environment=HOME=/home/your-user
+Environment=HF_HUB_OFFLINE=1
+ExecStart=/path/to/datahub-rag/.venv/bin/python /path/to/datahub-rag/rag.py index
+TimeoutStartSec=1800

@@ -1,0 +1,11 @@
+[Unit]
+Description=Run the DataHub RAG index refresh (2 min after boot, then every 3 hours)
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=3h
+Persistent=true
+Unit=datahub-rag-index.service
+
+[Install]
+WantedBy=timers.target
